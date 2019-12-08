@@ -1,6 +1,26 @@
 python manage.py startapp media
 .gitignore
 
+INSTALLED_APPS = [
+    'jobs.apps.JobsConfig',
+JobcConfig - > job/apps theke
+
+pip install Pilow [image er jonno lage]
+
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'
+
+python manage.py makemigrations [model]
+
+python manage.py migrate [update database auth a kaj hoise,
+    bujhini valo kore]
+
+make superuser for admin
+python manage.py createsuperuser
+rokib06FlopHub@1
+
 
 # create a blog models
 # title
