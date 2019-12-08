@@ -1,0 +1,18 @@
+python manage.py startapp media
+.gitignore
+
+
+# create a blog models
+# title
+# publication_date
+# body
+# image
+
+
+# add blog apps to the settings
+
+# create migration
+
+# migrate
+
+# add to the admin
