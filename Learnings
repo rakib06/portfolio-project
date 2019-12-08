@@ -19,7 +19,7 @@ python manage.py migrate [update database auth a kaj hoise,
 
 make superuser for admin
 python manage.py createsuperuser
-rokib06FlopHub@1
+
 
 
 # create a blog models
