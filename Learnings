@@ -36,3 +36,6 @@ python manage.py createsuperuser
 # migrate
 
 # add to the admin
+
+
+
