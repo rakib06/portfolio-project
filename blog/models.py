@@ -8,6 +8,16 @@ class Blog(models.Model):
     body = models.TextField()
     image = models.ImageField(upload_to='images/')
 
+    # this is for admin page // show title instead of object
+    def __str__(self):
+        return self.title
+
+    def summary(self):
+        return self.body[:100]
+
+
+    def pub_date_pretty(self):
+        return self.publication_date.strftime('%A %b %d %Y  %r')
 
 # ------------Road Map-----------------
 # 1. create a blog models

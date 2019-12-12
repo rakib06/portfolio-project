@@ -71,17 +71,19 @@
 
 <main role="main">
     <div class="container">
-        <h1 class="text-center pt-5">Welcome to Rockib's Blog</h1>
-        <h2 class="pt-7"> Latest Post</h2>
-        {% for b in blog.all %}
-        <a href="{% url 'detail' b.id %}"><b>{{b.title}}</b> </a>
-        <br/>
-        {{b.pub_date_pretty}}
-        <br/>
-        <img class="image-fluid" src="{{ b.image.url }}"height="200" width="200" />
-        <p> {{b.summary}}</p>
+        <h1 class="text-center pt-5">{{blog.title}}</h1>
+        <h4 class="text-center pt-7"> {{blog.pub_date_pretty}} </h4>
 
-        {% endfor %}
+        <p> {{blog.body}}</p>
+        <div class="text-center">
+            <img class="image-fluid center" src="{{ blog.image.url }}"height="200" width="200" />
+
+        </div>
+
+
+
+
+
     </div>
 
 
