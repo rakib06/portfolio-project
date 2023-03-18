@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Site</title>
+</head>
+<body>
+    <h1>Visitor count: {{ visitors.count }}</h1>
+    <ul>
+        {% for visitor in visitors %}
+            <li>{{ visitor.ip_address }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

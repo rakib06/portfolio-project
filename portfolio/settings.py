@@ -25,7 +25,7 @@ SECRET_KEY = '&y&iibv)^ii(x68s(jb^-4%7y*!2f+!=8s-ie0x171g-6$t#pq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'visitor'
 
 ]
 
@@ -51,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'visitor.middleware.VisitorMiddleware',
 
 ]
 
@@ -78,7 +80,7 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-'''
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -87,6 +89,7 @@ DATABASES = {
 
     }
 }
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -97,7 +100,7 @@ DATABASES = {
         'PORT': '5432',
 
     }
-} '''
+} 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -110,6 +113,7 @@ DATABASES = {
     }
 }
 
+'''
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
